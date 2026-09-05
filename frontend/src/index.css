@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFCFF;
+  color: #0F172A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 99%;
+    --foreground: 222 47% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 7%;
+    --primary: 183 83% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 183 83% 26%;
+    --radius: 0.625rem;
+    --chart-1: 183 83% 26%;
+    --chart-2: 199 89% 48%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  [data-debug-wrapper="true"] { display: contents !important; }
+  [data-debug-wrapper="true"] > * {
+    margin: inherit; padding: inherit;
+    gap: inherit; border: inherit; border-color: inherit;
+  }
+}
+
+/* Healthcare scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #F1F5F9; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+/* Smooth transitions */
+* { transition-property: color, background-color, border-color, box-shadow; transition-duration: 150ms; }
+
+/* Demo banner pulse */
+@keyframes demo-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+/* Floating chatbot animation */
+@keyframes chatbot-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.chatbot-fab { animation: chatbot-bounce 3s ease-in-out infinite; }
+.chatbot-fab:hover { animation: none; }
+
+/* Status pill colors */
+.status-scheduled { @apply bg-blue-50 text-blue-700 border border-blue-200; }
+.status-waiting { @apply bg-amber-50 text-amber-700 border border-amber-200; }
+.status-in_call { @apply bg-emerald-50 text-emerald-700 border border-emerald-200; }
+.status-completed { @apply bg-slate-50 text-slate-600 border border-slate-200; }
+.status-rescheduled { @apply bg-indigo-50 text-indigo-700 border border-indigo-200; }
+.status-cancelled { @apply bg-rose-50 text-rose-700 border border-rose-200; }
+.status-no_show { @apply bg-orange-50 text-orange-700 border border-orange-200; }
+
+/* Card hover lift */
+.card-hover { @apply hover:shadow-md hover:-translate-y-0.5 transition-all duration-200; }
+
+/* Sidebar nav item */
+.nav-item { @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-[#0D7377] transition-all duration-150 cursor-pointer; }
+.nav-item.active { @apply bg-[#E6F4F4] text-[#0D7377] font-semibold; }

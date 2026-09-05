@@ -1,0 +1,126 @@
+{
+  "project_name": "MediBridge",
+  "app_type": "hybrid_fullstack_saas_healthcare",
+  "design_philosophy": "Clean, Clinical, Modern, and Trustworthy. High legibility, role-tailored workflows, zero clutter, structured cards, warm professional aesthetics.",
+  "persistent_demo_banner": {
+    "text": "Demo Build — Synthetic Data Only — Not for Clinical Use",
+    "style": "bg-slate-900 text-slate-100 text-xs py-1.5 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2 border-b border-slate-800"
+  },
+  "typography": {
+    "heading_font": "Plus Jakarta Sans, sans-serif",
+    "body_font": "Inter, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-slate-900",
+      "h3": "text-xl sm:text-2xl font-semibold text-slate-800",
+      "h4": "text-lg sm:text-xl font-medium text-slate-800",
+      "body": "text-base text-slate-600 leading-relaxed",
+      "small": "text-sm text-slate-500",
+      "label": "text-xs font-semibold uppercase tracking-wider text-slate-500"
+    }
+  },
+  "colors": {
+    "archetype": "Swiss & Clinical Precision (Clean & Trustworthy)",
+    "primary": {
+      "teal_main": "#0D7377",
+      "teal_hover": "#095457",
+      "teal_light": "#E6F4F4"
+    },
+    "secondary": {
+      "blue_main": "#0284C7",
+      "blue_hover": "#0369A1",
+      "blue_light": "#E0F2FE"
+    },
+    "neutral": {
+      "background": "#FAFCFF",
+      "surface_card": "#FFFFFF",
+      "surface_subtle": "#F8FAFC",
+      "border": "#E2E8F0",
+      "border_subtle": "#F1F5F9",
+      "text_main": "#0F172A",
+      "text_muted": "#475569",
+      "text_faint": "#94A3B8"
+    },
+    "role_accents": {
+      "patient": {
+        "badge_bg": "bg-emerald-50 text-emerald-700 border-emerald-200",
+        "primary": "#059669"
+      },
+      "doctor": {
+        "badge_bg": "bg-teal-50 text-teal-700 border-teal-200",
+        "primary": "#0D7377"
+      },
+      "psychologist": {
+        "badge_bg": "bg-indigo-50 text-indigo-700 border-indigo-200",
+        "primary": "#4F46E5"
+      },
+      "nutritionist": {
+        "badge_bg": "bg-amber-50 text-amber-700 border-amber-200",
+        "primary": "#D97706"
+      }
+    },
+    "status": {
+      "success": "bg-emerald-50 text-emerald-700 border-emerald-200",
+      "warning": "bg-amber-50 text-amber-700 border-amber-200",
+      "error": "bg-rose-50 text-rose-700 border-rose-200",
+      "info": "bg-sky-50 text-sky-700 border-sky-200"
+    },
+    "forbidden_colors": [
+      "#1B93A4",
+      "#7351B7"
+    ]
+  },
+  "layouts_and_grids": {
+    "marketing": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "grid": "grid grid-cols-1 md:grid-cols-12 gap-8 items-center"
+    },
+    "dashboard": {
+      "container": "min-h-screen bg-[#FAFCFF] flex flex-col md:flex-row",
+      "sidebar": "w-full md:w-64 bg-white border-r border-slate-200 p-6 flex flex-col justify-between shrink-0",
+      "main_content": "flex-1 p-6 md:p-10 max-w-7xl mx-auto w-full space-y-8",
+      "bento_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    }
+  },
+  "navigation_and_header": {
+    "header_rules": "Always include persistent logo with icon, 4 navigation links, persistent role indicator/switcher, demo banner top strip, user avatar menu, and language dropdown.",
+    "backdrop": "backdrop-blur-md bg-white/90 border-b border-slate-200 sticky top-0 z-40"
+  },
+  "component_styling": {
+    "cards": "bg-white border border-slate-200/90 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200",
+    "buttons": {
+      "primary": "bg-[#0D7377] hover:bg-[#095457] text-white font-medium px-5 py-2.5 rounded-lg shadow-sm transition-all duration-150 active:scale-[0.99] focus:ring-2 focus:ring-[#0D7377]/20",
+      "secondary": "bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium px-5 py-2.5 rounded-lg transition-all duration-150",
+      "accent": "bg-[#0284C7] hover:bg-[#0369A1] text-white font-medium px-5 py-2.5 rounded-lg shadow-sm transition-all duration-150"
+    },
+    "inputs": "bg-white border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#0D7377] focus:ring-2 focus:ring-[#0D7377]/15 transition-colors",
+    "tables": "w-full border-collapse border border-slate-200 rounded-lg overflow-hidden text-sm"
+  },
+  "image_urls": {
+    "telehealth_consultation_1": "https://images.unsplash.com/photo-1758691463606-1493d79cc577?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjB0ZWxlaGVhbHRoJTIwY29uc3VsdGF0aW9uJTIwdmlkZW8lMjBjYWxsfGVufDB8fHx8MTc4ODYxOTg5OHww&ixlib=rb-4.1.0&q=85",
+    "telehealth_consultation_2": "https://images.unsplash.com/photo-1758691463620-188ca7c1a04f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwzfHxkb2N0b3IlMjB0ZWxlaGVhbHRoJTIwY29uc3VsdGF0aW9uJTIwdmlkZW8lMjBjYWxsfGVufDB8fHx8MTc4ODYxOTg5OHww&ixlib=rb-4.1.0&q=85",
+    "doctor_portrait_male": "https://images.unsplash.com/photo-1758691463582-11aea602cd4a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHw0fHxmcmllbmRseSUyMGRvY3RvciUyMHBvcnRyYWl0JTIwbWVkaWNhbCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3ODg2MTk4OTh8MA&ixlib=rb-4.1.0&q=85",
+    "doctor_portrait_smiling": "https://images.unsplash.com/photo-1612349316228-5942a9b489c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwyfHxmcmllbmRseSUyMGRvY3RvciUyMHBvcnRyYWl0JTIwbWVkaWNhbCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3ODg2MTk4OTh8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "general_testing_requirements": {
+    "data_testid_rule": "ALL interactive components, form inputs, buttons, role cards, tabs, select dropdowns, and status badges MUST carry data-testid in kebab-case format.",
+    "examples": [
+      "data-testid=\"role-select-patient\"",
+      "data-testid=\"role-select-doctor\"",
+      "data-testid=\"role-select-psychologist\"",
+      "data-testid=\"role-select-nutritionist\"",
+      "data-testid=\"login-submit-button\"",
+      "data-testid=\"start-ai-preconsultation-btn\"",
+      "data-testid=\"join-video-call-btn\"",
+      "data-testid=\"generate-eprescription-btn\""
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure persistent top banner 'Demo Build — Synthetic Data Only — Not for Clinical Use' is always rendered across all pages.",
+    "Support clear role switching (Patient, Doctor, Psychologist, Nutritionist) with distinct dashboard metrics and permissions.",
+    "Use Shadcn UI components for dialogs, tabs, date pickers, select dropdowns, toasts (sonner), and tooltips.",
+    "Maintain strict healthcare aesthetics: clean white/light slate surfaces, deep teal (#0D7377) primary actions, and clear status badges.",
+    "Every page must feel responsive, mobile-optimized, and fully populated with authentic synthetic medical data."
+  ]
+}
